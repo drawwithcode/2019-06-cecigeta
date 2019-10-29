@@ -3,11 +3,54 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
-    <style> body {padding: 0; margin: 0;} </style>
+    <style>
+
+    body {
+      padding: 0;
+      margin: 10;
+      background: #68C5DB;
+
+    }
+
+    button {
+      font-family: 'Ultra';
+      font-size: 60px;
+      border: none;
+      background: none;
+    }
+
+    h1 {
+      font-family: "Ultra";
+      position: absolute;
+      left: 27%;
+      top: 10%;
+    }
+
+    div .testo {
+      display: none;
+    }
+
+    div:hover .title {
+      display: none;
+    }
+    div:hover .testo {
+      display: inline;
+      content: 'Click on the canvas';
+      font-family: 'Press Start 2P';
+      font-size: 20px;
+      color: blue;
+    }
+
+     </style>
     <script src="p5.min.js"></script>
-    <!-- <script src="addons/p5.sound.min.js"></script> -->
+    <script src="p5.sound.min.js"></script>
     <script src="sketch.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Pro|Press+Start+2P|Ultra&display=swap" rel="stylesheet">
   </head>
   <body>
+  <div>
+    <h1 class= "title"> Make the ball bigger or smaller </h1>
+    <h1 class= "testo"> Click on canvas <br> to change the background </h1>
+  </div>
   </body>
 </html>
